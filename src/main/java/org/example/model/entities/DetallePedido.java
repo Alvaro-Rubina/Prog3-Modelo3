@@ -9,6 +9,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Getter @Setter
 @Builder
+@ToString(exclude = "articulos")
 public class DetallePedido {
 
     //

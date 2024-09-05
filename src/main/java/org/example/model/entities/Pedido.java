@@ -13,6 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Getter @Setter
 @Builder
+@ToString(exclude = {"detalles", "estado", "tipoEnvio"})
 public class Pedido {
 
     //
