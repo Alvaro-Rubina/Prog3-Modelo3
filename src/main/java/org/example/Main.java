@@ -103,6 +103,95 @@ public class Main {
         imagenRepo.save(imgCervezaAndes);
         imagenRepo.save(imgCervezaQuilmes);
 
+        // Creacion de los articulos
+        Articulo pizzaHawaianaGrande = Articulo.builder()
+                .denominacion("Pizza Hawaiana grande")
+                .precioVenta(9000)
+                .precioCompra(5000)
+                .stockActual(45)
+                .stockMaximo(60)
+                .tiempoEstimadoEnMinutos(30)
+                .unidadMedida(ochoPorciones)
+                .imagen(imgPizzaHawaianaGrande)
+                .build();
+
+        Articulo pizzaHawaianaChica = Articulo.builder()
+                .denominacion("Pizza Hawaiana chica")
+                .precioVenta(5000)
+                .precioCompra(3000)
+                .stockActual(30)
+                .stockMaximo(40)
+                .tiempoEstimadoEnMinutos(20)
+                .unidadMedida(cuatroPorciones)
+                .imagen(imgPizzaHawaianaChica)
+                .build();
+
+        Articulo pizzaNapolitanaGrande = Articulo.builder()
+                .denominacion("Pizza Napolitana grande")
+                .precioVenta(8000)
+                .precioCompra(4500)
+                .stockActual(50)
+                .stockMaximo(70)
+                .tiempoEstimadoEnMinutos(25)
+                .unidadMedida(ochoPorciones)
+                .imagen(imgPizzaNapolitanaGrande)
+                .build();
+
+        Articulo pizzaNapolitanaChica = Articulo.builder()
+                .denominacion("Pizza Napolitana chica")
+                .precioVenta(4500)
+                .precioCompra(2500)
+                .stockActual(35)
+                .stockMaximo(45)
+                .tiempoEstimadoEnMinutos(15)
+                .unidadMedida(cuatroPorciones)
+                .imagen(imgPizzaNapolitanaChica)
+                .build();
+
+        Articulo pizzaMuzarellaGrande = Articulo.builder()
+                .denominacion("Pizza Muzzarella grande")
+                .precioVenta(7000)
+                .precioCompra(4000)
+                .stockActual(40)
+                .stockMaximo(55)
+                .tiempoEstimadoEnMinutos(25)
+                .unidadMedida(ochoPorciones)
+                .imagen(imgPizzaMuzarellaGrande)
+                .build();
+
+        Articulo pizzaMuzarellaChica = Articulo.builder()
+                .denominacion("Pizza Muzzarella chica")
+                .precioVenta(4000)
+                .precioCompra(2000)
+                .stockActual(25)
+                .stockMaximo(35)
+                .tiempoEstimadoEnMinutos(15)
+                .unidadMedida(cuatroPorciones)
+                .imagen(imgPizzaMuzarellaChica)
+                .build();
+
+        Articulo cervezaAndes = Articulo.builder()
+                .denominacion("Cerveza Andes")
+                .precioVenta(2000)
+                .precioCompra(1000)
+                .stockActual(100)
+                .stockMaximo(150)
+                .tiempoEstimadoEnMinutos(0)
+                .unidadMedida(unLitro)
+                .imagen(imgCervezaAndes)
+                .build();
+
+        Articulo cervezaQuilmes = Articulo.builder()
+                .denominacion("Cerveza Quilmes")
+                .precioVenta(1500)
+                .precioCompra(800)
+                .stockActual(80)
+                .stockMaximo(120)
+                .tiempoEstimadoEnMinutos(0)
+                .unidadMedida(unLitro)
+                .imagen(imgCervezaQuilmes)
+                .build();
+
     }
 
 }
