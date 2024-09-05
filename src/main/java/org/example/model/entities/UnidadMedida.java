@@ -8,4 +8,8 @@ import lombok.*;
 @Builder
 @ToString
 public class UnidadMedida {
+
+    //
+    private Long id;
+    private String denominacion;
 }
